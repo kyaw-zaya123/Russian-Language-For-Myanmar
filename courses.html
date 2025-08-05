@@ -1,38 +1,83 @@
-<nav class="navbar">
-    <ul class="nav-menu">
-        <li class="nav-item active">
-            <a href="index.html" class="nav-link">
-                <i class="fas fa-home"></i> ပင်မ
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="courses.html" class="nav-link">
-                <div class="nav-with-image">
-                    <img src="images/course-icon1.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <img src="images/course-icon2.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <img src="images/course-icon3.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <img src="images/course-icon4.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <img src="images/course-icon5.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <img src="images/course-icon6.jpg" alt="သင်တန်းအကြောင်းအရာများ" class="nav-image">
-                    <span>သင်တန်းအကြောင်းအရာများ</span>
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>သင်တန်းများ - Russian Language Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar - Main Page နှင့်တူညီသော -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Russian Language Center</h1>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i> ပင်မ
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="courses.html" class="nav-link">
+                            <i class="fas fa-book"></i> သင်တန်းများ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-info-circle"></i> ကျွန်ုပ်တို့အကြောင်း
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i> ဆက်သွယ်ရန်
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="about.html" class="nav-link">
-                <i class="fas fa-info-circle"></i> ကျွန်ုပ်တို့အကြောင်း
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-                <i class="fas fa-envelope"></i> ဆက်သွယ်ရန်
-            </a>
-        </li>
-    </ul>
-    
-    <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-</nav>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course Content Section -->
+    <main class="main-content">
+        <section class="courses-section">
+            <h2>သင်တန်းအကြောင်းအရာများ</h2>
+            
+            <div class="course-cards">
+                <div class="course-card">
+                    <img src="images/about-us.jpg" alt="အခြေခံသင်တန်း">
+                    <h3>အခြေခံအဆင့်</h3>
+                    <p>ရုရှားဘာသာစကား အခြေခံများကို စတင်လေ့လာရန်</p>
+                    <a href="beginner.html" class="btn">အသေးစိတ်ကြည့်ရှုရန်</a>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/about-us.jpg" alt="အလယ်အလတ်သင်တန်း">
+                    <h3>အလယ်အလတ်အဆင့်</h3>
+                    <p>အလယ်အလတ်အဆင့် စကားပြောနှင့် သဒ္ဒါများ</p>
+                    <a href="intermediate.html" class="btn">အသေးစိတ်ကြည့်ရှုရန်</a>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/about-us.jpg" alt="အဆင့်မြင့်သင်တန်း">
+                    <h3>ဘာသာပြန် level</h3>
+                    <p>အဆင့်အမြင့်ဆုံး ကျွမ်းကျင်မှုအဆင့်သို့ တိုးမြှင့်ရန်</p>
+                    <a href="advanced.html" class="btn">အသေးစိတ်ကြည့်ရှုရန်</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
