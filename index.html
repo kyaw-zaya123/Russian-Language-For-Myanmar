@@ -3,39 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ရုရှားဘာသာစကားသင်တန်း</title>
+    <title id="page-title">ရုရှားဘာသာစကားသင်တန်း</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Language Switcher -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>Russian Language Center</h1>
+                <h1 id="site-name">Russian Language Center</h1>
             </div>
             
             <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item active">
-                        <a href="index.html" class="nav-link">
-                            <i class="fas fa-home"></i> ပင်မ
+                        <a href="index.html" class="nav-link" data-i18n="home">
+                            <i class="fas fa-home"></i> <span>ပင်မ</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="courses.html" class="nav-link">
-                            <i class="fas fa-book"></i> သင်တန်းအကြောင်းအရာများ
+                        <a href="courses.html" class="nav-link" data-i18n="courses">
+                            <i class="fas fa-book"></i> <span>သင်တန်းများ</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">
-                            <i class="fas fa-info-circle"></i> ကျွန်ုပ်တို့အကြောင်း
+                        <a href="about.html" class="nav-link" data-i18n="about">
+                            <i class="fas fa-info-circle"></i> <span>ကျွန်ုပ်တို့အကြောင်း</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
-                            <i class="fas fa-envelope"></i> ဆက်သွယ်ရန်
+                        <a href="contact.html" class="nav-link" data-i18n="contact">
+                            <i class="fas fa-envelope"></i> <span>ဆက်သွယ်ရန်</span>
                         </a>
+                    </li>
+                    
+                    <!-- Language Switcher in Navigation -->
+                    <li class="nav-item language-dropdown">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-globe"></i> <span id="current-language">မြန်မာ</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="language-menu">
+                            <li><a href="#" data-lang="my"><img src="images/Flag_of_Myanmar.svg" alt="မြန်မာ"> မြန်မာ</a></li>
+                            <li><a href="#" data-lang="en"><img src="images/Flag_of_the_United_Kingdom_(3-5).svg" alt="English"> English</a></li>
+                            <li><a href="#" data-lang="ru"><img src="images/Flag_of_Russia.svg.png" alt="Русский"> Русский</a></li>
+                        </ul>
                     </li>
                 </ul>
                 
@@ -48,32 +61,32 @@
         </div>
     </header>
 
-    <!-- Hero Section with Background Image -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>ရုရှားဘာသာစကားကို အလွယ်တကူသင်ယူပါ</h2>
-            <p>ရုရှား native speakerများနှင့် ထိရောက်သောသင်ကြားနည်းများဖြင့် သင်တန်းသားများ အလွယ်တကူတတ်မြောက်စေရန် သင်ကြားပြသပေးပါတယ်ရှင့်</p>
-            <a href="courses.html" class="btn">သင်တန်းများကြည့်ရှုရန်</a>
+            <h2 id="hero-title">ရုရှားဘာသာစကားကို အလွယ်တကူသင်ယူပါ</h2>
+            <p id="hero-subtitle">ရုရှား native speakerများနှင့် ထိရောက်သောသင်ကြားနည်းများဖြင့် သင်ကြားပို့ချပေးပါသည်</p>
+            <a href="courses.html" class="btn" id="view-courses-btn">သင်တန်းများကြည့်ရှုရန်</a>
         </div>
     </section>
 
-    <!-- Main Content Section -->
+    <!-- Features Section -->
     <main class="main-content">
         <section class="features">
             <div class="feature-card">
                 <i class="fas fa-chalkboard-teacher"></i>
-                <h3>ကျွမ်းကျင်ဆရာများ</h3>
-                <p>ရုရှားဘာသာစကားကျွမ်းကျင်သူများမှ သင်ကြားပို့ချပေးပါသည်</p>
+                <h3 id="feature1-title">ကျွမ်းကျင်ဆရာများ</h3>
+                <p id="feature1-desc">ရုရှားဘာသာစကားကျွမ်းကျင်သူများမှ သင်ကြားပို့ချပေးပါသည်</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-certificate"></i>
-                <h3>အသိအမှတ်ပြုလက်မှတ်</h3>
-                <p>သင်တန်းပြီးဆုံးပါက အသိအမှတ်ပြုလက်မှတ်ထုတ်ပေးပါသည်</p>
+                <h3 id="feature2-title">အသိအမှတ်ပြုလက်မှတ်</h3>
+                <p id="feature2-desc">သင်တန်းပြီးဆုံးပါက အသိအမှတ်ပြုလက်မှတ်ထုတ်ပေးပါသည်</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-users"></i>
-                <h3>လူဦးရေအကန့်အသတ်</h3>
-                <p>တစ်ဦးချင်းဂရုစိုက်သင်ကြားနိုင်ရန် လူဦးရေကန့်သတ်ထားပါသည်</p>
+                <h3 id="feature3-title">လူဦးရေအကန့်အသတ်</h3>
+                <p id="feature3-desc">တစ်ဦးချင်းဂရုစိုက်သင်ကြားနိုင်ရန် လူဦးရေကန့်သတ်ထားပါသည်</p>
             </div>
         </section>
     </main>
@@ -81,12 +94,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Russian Language Center. All rights reserved.</p>
+            <p id="copyright">&copy; 2025 Russian Language Center. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="language-switcher.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
-
